@@ -1,0 +1,105 @@
+.via-form {
+  .el-form-item {
+    @apply mb-30;
+    .el-icon-circle-check {
+      @apply text-green-500;
+    }
+    .el-form-item__content {
+      .el-select {
+        .el-input {
+          width: 188px;
+          .el-input__inner {
+            @apply text-blue-400 font-w500 text-14;
+          }
+        }
+        .el-input__suffix {
+          .el-input__suffix-inner {
+            .el-input__icon {
+              color: #444f78;
+            }
+          }
+        }
+      }
+    }
+    &.is-error {
+      .el-form-item__content {
+        .el-input {
+          .el-input__inner {
+            @apply border-red-500 bg-red-100;
+          }
+        }
+        .el-form-item__error {
+          @apply text-red-500;
+        }
+      }
+    }
+
+    .el-form-item__label {
+      padding: 0 0 8px 0;
+      font-size: 12px;
+      line-height: 1;
+      color: rgba(84, 96, 117, 1);
+      &::before {
+        display: none;
+      }
+    }
+  }
+  .el-textarea__inner {
+    min-height: 94px;
+    padding-top: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #272d39;
+    background-color: #f8f9fb;
+    border: 1px solid #e0e3ed;
+    border-radius: 2px;
+
+    &::placeholder {
+      color: #c9ced8;
+    }
+  }
+  .el-checkbox-group {
+    display: flex;
+    align-items: center;
+    .el-checkbox {
+      font-size: 12px;
+      line-height: 17px;
+      color: rgba(39, 45, 57, 1);
+      .el-checkbox__label {
+        font-size: 12px;
+        color: rgba(39, 45, 57, 1);
+      }
+      .el-checkbox__inner {
+        width: 13px;
+        height: 13px;
+        background: rgba(242, 244, 249, 1);
+        border: 1px solid rgba(198, 201, 211, 1);
+      }
+      .el-checkbox__input.is-checked .el-checkbox__inner {
+        background-color: #6184ed;
+        border-color: #6184ed;
+      }
+    }
+  }
+  .el-radio {
+    .el-radio__label {
+      font-size: 12px;
+      color: var(--g-black);
+    }
+  }
+  .el-radio__inner {
+    width: 13px;
+    height: 13px;
+    background: rgba(242, 244, 249, 1);
+    border: 1px solid rgba(198, 201, 211, 1);
+  }
+  .el-radio__input.is-checked + .el-radio__label {
+    font-size: 12px;
+    color: var(--g-black);
+  }
+  .el-radio__input.is-checked .el-radio__inner {
+    background: rgba(255, 255, 255, 1);
+    border-width: 4px;
+    @apply border-purple-900;
+  }
+}

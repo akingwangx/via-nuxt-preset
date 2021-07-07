@@ -1,0 +1,56 @@
+.el-tabs {
+  @apply h-full flex flex-col;
+
+  .el-tabs__header {
+    @apply my-0 #{!important};
+
+    .el-tabs__nav-wrap {
+      &::after {
+        @apply h-1;
+      }
+
+      &.is-top {
+        .el-tabs__nav-scroll {
+          @apply px-20 pt-20;
+          .el-tabs__nav {
+            .el-tabs__active-bar {
+              @apply bg-purple-900;
+            }
+            .el-tabs__item {
+              @apply h-auto text-14 text-blue-200 pl-0 pb-5;
+              &:not(:last-child) {
+                @apply pr-20;
+              }
+              &.is-active {
+                @apply text-blue-400 font-w600;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .el-tabs__content {
+    @apply pt-20 flex-1;
+  }
+}
+
+.normal-tabs {
+  .el-tabs__header {
+    .el-tabs__nav-wrap {
+      &::after {
+        @apply hidden;
+      }
+
+      &.is-top {
+        .el-tabs__nav-scroll {
+          @apply px-0 pt-0 #{!important};
+          .el-tabs__nav {
+            @apply pb-10;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,208 @@
+/* search box style */
+.home-table {
+  margin: 0 auto;
+  overflow: initial;
+  background: transparent !important;
+  .el-table__body-wrapper {
+    overflow: initial;
+  }
+  .cell {
+    padding: 0 !important;
+  }
+  thead {
+    tr {
+      th {
+        @apply text-12;
+        padding: 20px 0 10px;
+        font-weight: 400;
+        color: #56568a;
+        border-bottom: none !important;
+        &:first-child {
+          padding-left: 30px;
+        }
+        &:last-child {
+          padding-right: 30px;
+        }
+      }
+    }
+  }
+  tbody {
+    tr {
+      &:hover {
+        box-shadow: 0 10px 30px 0 rgba(49, 49, 84, 0.1);
+      }
+      td {
+        position: relative;
+        padding: 20px 0;
+        border-bottom: none;
+        &::before {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background: rgba(244, 245, 249, 1);
+          content: '';
+        }
+        &:first-child {
+          padding-left: 30px;
+          &::before {
+            left: 30px;
+          }
+        }
+        &:last-child {
+          padding-right: 30px;
+          &::before {
+            left: -30px;
+          }
+        }
+      }
+    }
+  }
+  &.el-table--enable-row-hover .el-table__body tr:hover > td {
+    background: rgba(139, 105, 255, 0.1);
+  }
+}
+
+.com-table {
+  .cell {
+    padding: 0 20px !important;
+  }
+  .descending .sort-caret.descending {
+    border-top-color: #8b69ff;
+  }
+  .ascending .sort-caret.ascending {
+    border-bottom-color: #8b69ff;
+  }
+  .el-table__header-wrapper {
+    .el-table__header {
+      thead {
+        tr {
+          th {
+            padding: 10px 0;
+            @apply text-12;
+            @apply font-w400;
+            @apply text-blue-200;
+            border-bottom: 0;
+          }
+        }
+      }
+      .caret-wrapper {
+        width: 15px;
+        .sort-caret {
+          left: 4px;
+          width: 6px;
+          transform: scaleX(0.6);
+        }
+      }
+    }
+  }
+
+  .el-table__body-wrapper {
+    .el-table__body {
+      tbody {
+        .el-table__row {
+          td {
+            padding: 12px 0;
+            @screen xs {
+              padding: 8px 0;
+            }
+            @apply text-14;
+            @apply font-w400;
+            @apply text-blue-400;
+            border-bottom: none;
+          }
+
+          &:hover {
+            td {
+              background-color: rgba(95, 95, 255, 0.1) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.stripe {
+    .el-table__body-wrapper {
+      .el-table__body {
+        tbody {
+          .el-table__row {
+            &:nth-child(2n + 1) {
+              td {
+                @apply bg-blue-10;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &::before {
+    display: none;
+  }
+
+  &.no-hover {
+    .el-table__body-wrapper {
+      .el-table__body {
+        tbody {
+          .el-table__row {
+            &:hover {
+              td {
+                @apply bg-transparent #{!important};
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.com-no-padding {
+  .cell {
+    padding: 0 !important;
+  }
+
+  tr {
+    th {
+      @apply text-12 font-w400 text-blue-200 #{!important};
+    }
+
+    th:first-child {
+      @apply pl-20 #{!important};
+    }
+
+    // 一般情况 el-table 会末尾添加多一个 <th class="gutter"> 所以选择倒数第二个元素
+    th:nth-last-child(2) {
+      @apply pr-20 #{!important};
+    }
+
+    td:first-child {
+      @apply pl-20 #{!important};
+    }
+
+    td:last-child {
+      @apply pr-20 #{!important};
+    }
+  }
+
+  // 看目前大部分情况都没有加这个<th class="gutter">
+  &.no-fix {
+    tr {
+      th:nth-last-child(2) {
+        @apply pr-0 #{!important};
+      }
+      th:last-child {
+        @apply pr-20 #{!important};
+      }
+    }
+  }
+}
+
+.el-table__empty-block {
+  @screen xs {
+    @apply w-full #{!important};
+  }
+}

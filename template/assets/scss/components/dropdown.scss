@@ -1,0 +1,13 @@
+.el-dropdown-menu {
+  .el-dropdown-menu__item {
+    @apply text-14 pl-20 text-blue-400 h-auto;
+    line-height: 40px;
+    &.selected {
+      @apply text-purple-900;
+    }
+    &:hover {
+      color: theme('colors.purple.900') !important;
+      background-color: rgba($color: #8b69ff, $alpha: 0.1) !important;
+    }
+  }
+}

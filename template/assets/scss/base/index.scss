@@ -1,0 +1,52 @@
+html,
+body {
+  @apply h-full;
+  @apply min-h-full;
+  @apply font-body;
+  @apply text-14;
+  @apply box-border;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  @apply m-0;
+  @apply box-border;
+}
+
+#__nuxt {
+  @apply h-full;
+  @apply min-h-full;
+  #__layout {
+    @apply h-full;
+    @apply min-h-full;
+  }
+}
+
+ul {
+  @apply m-0;
+  @apply p-0;
+  @apply list-none;
+}
+
+a {
+  @apply no-underline;
+}
+
+img,
+video {
+  max-width: none;
+}
+
+.beta-logo {
+  @apply relative inline-block;
+}
+
+// 1200 - 1920 适配相关
+.lg-content {
+  width: 100% !important;
+  max-width: 1920px !important;
+  min-width: 1200px !important;
+}

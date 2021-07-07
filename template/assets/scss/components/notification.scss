@@ -1,0 +1,13 @@
+.el-notification {
+  width: 340px;
+  .el-notification__group {
+    .el-notification__title {
+      line-height: 24px;
+    }
+    .el-notification__content {
+      @apply text-left;
+      margin-top: 0 !important;
+      line-height: 24px;
+    }
+  }
+}

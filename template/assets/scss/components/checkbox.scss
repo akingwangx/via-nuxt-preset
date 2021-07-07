@@ -1,0 +1,35 @@
+.el-checkbox {
+  .el-checkbox__input {
+    line-height: 20px;
+
+    .el-checkbox__inner {
+      @apply border-blue-100 rounded-4 bg-blue-100;
+    }
+
+    /* selected style */
+    &.is-checked {
+      .el-checkbox__inner {
+        @apply border-purple-900;
+        @apply bg-purple-900;
+      }
+    }
+  }
+  .el-checkbox__label {
+    @apply text-blue-200;
+  }
+  .is-focus {
+    .el-checkbox__inner {
+      border-color: theme('colors.purple.900') !important;
+    }
+  }
+
+  &.is-checked {
+    .el-checkbox__inner {
+      @apply border-purple-900;
+      @apply bg-purple-900;
+    }
+    .el-checkbox__label {
+      color: theme('colors.blue.50') !important;
+    }
+  }
+}

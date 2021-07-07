@@ -1,0 +1,24 @@
+@import './table';
+@import './pagination';
+@import './button';
+@import './dialog';
+@import './form';
+@import './checkbox';
+@import './message-box';
+@import './input';
+@import './box';
+@import './link';
+@import './radio-group';
+@import './tabs';
+@import './tooltip';
+@import './datepicker';
+@import './select';
+@import './loading';
+@import './notification';
+@import './dropdown';
+@import './message';
+
+// 全局修改 v-loading 样式, 没地方放先放这里
+.el-loading-spinner .path {
+  stroke: theme('colors.purple.900');
+}

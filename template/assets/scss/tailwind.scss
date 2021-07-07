@@ -1,0 +1,10 @@
+// https://tailwindcss.com/docs/adding-new-utilities
+// tailwind 类分成三块: base + components + utilities
+// 文档写着自定义的 class 需要放在各自模块后面防止产生覆盖问题
+@import 'tailwindcss/base';
+@import './base/';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+@import './utilities/';

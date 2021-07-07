@@ -1,0 +1,77 @@
+.el-pagination {
+  display: inline-flex;
+  font-size: 12px;
+  button {
+    @apply text-blue-200;
+    height: 20px !important;
+    min-width: 20px !important;
+    line-height: 20px !important;
+    @screen xs {
+      padding: 0 5px !important;
+    }
+  }
+  span:not([class*='suffix']) {
+    height: 20px !important;
+    line-height: 20px !important;
+  }
+  .el-pager {
+    li {
+      @apply text-blue-200;
+      height: 20px;
+      min-width: 20px;
+      margin: 0 7px;
+      line-height: 20px;
+      text-align: center;
+
+      @screen xs {
+        margin: 0 3px;
+      }
+
+      &.active {
+        @apply text-white bg-purple-900 rounded-4;
+      }
+    }
+  }
+
+  .el-pagination__sizes {
+    height: 20px !important;
+    margin-right: 0;
+    background-color: transparent;
+    border-radius: 4px;
+    .el-select {
+      .el-input {
+        width: 83px;
+        height: 20px;
+        margin: 0;
+        line-height: 20px;
+        .el-input__inner {
+          height: 100%;
+          line-height: 20px;
+          border: 0;
+
+          &:focus {
+            background-color: transparent;
+          }
+        }
+        .el-input__icon {
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+  .el-pagination__jump {
+    height: 20px !important;
+    margin-left: 10px;
+    line-height: 20px;
+    .el-pagination__editor {
+      height: 20px;
+      margin: 0;
+      line-height: 20px;
+      input {
+        height: 20px !important;
+        line-height: 20px !important;
+      }
+    }
+  }
+}

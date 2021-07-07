@@ -1,0 +1,85 @@
+.el-date-editor {
+  &.com-range-picker {
+    @apply border-blue-20 rounded-4;
+    width: 240px;
+    height: 30px;
+    padding: 0 10px;
+    line-height: 28px;
+
+    &:hover {
+      @apply border-purple-900;
+    }
+
+    .el-input__icon {
+      line-height: 28px;
+      &.el-range__icon {
+        margin-right: 5px;
+      }
+    }
+    .el-range-separator {
+      @apply border-blue-400 text-14;
+      width: auto;
+      line-height: 28px;
+      white-space: nowrap;
+    }
+
+    .el-range-input {
+      font-size: 12px;
+      color: #444f78;
+    }
+  }
+}
+
+.el-picker-panel {
+  table {
+    td,
+    th {
+      text-align: center;
+    }
+  }
+}
+
+.el-date-range-picker {
+  @screen xs {
+    max-width: 100%;
+    max-height: 95%;
+    overflow-y: auto;
+    .el-picker-panel__body-wrapper {
+      .el-picker-panel__body {
+        min-width: 80%;
+        .el-date-range-picker__content {
+          float: none;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.el-picker-panel__body-wrapper {
+  .el-picker-panel__content {
+    .el-date-table {
+      td {
+        &.current:not(.disabled) {
+          span {
+            @apply bg-purple-900 text-white #{!important};
+          }
+        }
+        &.today {
+          span {
+            @apply text-purple-900;
+          }
+        }
+        &.available {
+          &:hover {
+            @apply text-purple-900;
+          }
+        }
+      }
+    }
+  }
+  .el-time-panel__btn {
+    &.confirm {
+      @apply text-purple-900;
+    }
+  }
+}

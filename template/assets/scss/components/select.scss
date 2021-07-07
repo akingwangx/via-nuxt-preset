@@ -1,0 +1,29 @@
+.com-select {
+  min-width: 110px;
+  .el-input {
+    @apply h-30 text-12;
+    .el-input__inner {
+      @apply text-blue-200 h-full border-blue-20 bg-white rounded-4;
+      padding-right: 7px;
+      padding-left: 14px;
+    }
+    .el-input__suffix {
+      .el-input__icon {
+        font-size: 12px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+.el-select-dropdown {
+  .el-select-dropdown__item {
+    @apply text-14 pt-10 pb-10 pl-20 text-blue-400 h-auto;
+    &.selected {
+      @apply text-purple-900;
+    }
+    &.hover {
+      background-color: rgba($color: #8b69ff, $alpha: 0.1);
+    }
+  }
+}

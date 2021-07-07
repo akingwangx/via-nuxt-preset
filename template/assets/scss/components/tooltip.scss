@@ -1,0 +1,57 @@
+.el-tooltip__popper.is-dark {
+  max-width: 300px;
+  @apply bg-yellow-100 text-blue-200 text-12 shadow-c-box;
+
+  &[x-placement^='bottom'] .popper__arrow {
+    border-bottom-color: theme('colors.yellow.100') !important;
+    &:after {
+      border-bottom-color: theme('colors.yellow.100') !important;
+    }
+  }
+  &[x-placement^='left'] .popper__arrow {
+    border-left-color: theme('colors.yellow.100') !important;
+    &:after {
+      border-left-color: theme('colors.yellow.100') !important;
+    }
+  }
+  &[x-placement^='top'] .popper__arrow {
+    border-top-color: theme('colors.yellow.100') !important;
+    &:after {
+      border-top-color: theme('colors.yellow.100') !important;
+    }
+  }
+  &[x-placement^='right'] .popper__arrow {
+    border-right-color: theme('colors.yellow.100') !important;
+    &:after {
+      border-right-color: theme('colors.yellow.100') !important;
+    }
+  }
+}
+.el-tooltip__popper.is-light {
+  @apply text-blue-50 bg-white border-0;
+
+  &[x-placement^='bottom'] .popper__arrow {
+    border-bottom-color: theme('colors.white') !important;
+    &:after {
+      border-bottom-color: theme('colors.white') !important;
+    }
+  }
+  &[x-placement^='left'] .popper__arrow {
+    border-left-color: theme('colors.white') !important;
+    &:after {
+      border-left-color: theme('colors.white') !important;
+    }
+  }
+  &[x-placement^='top'] .popper__arrow {
+    border-top-color: theme('colors.white') !important;
+    &:after {
+      border-top-color: theme('colors.white') !important;
+    }
+  }
+  &[x-placement^='right'] .popper__arrow {
+    border-right-color: theme('colors.white') !important;
+    &:after {
+      border-right-color: theme('colors.white') !important;
+    }
+  }
+}

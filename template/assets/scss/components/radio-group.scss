@@ -1,0 +1,26 @@
+.el-radio-group {
+  .el-radio {
+    .el-radio__label {
+      @apply text-blue-50;
+      padding-left: 5px;
+    }
+    .el-radio__input {
+      .el-radio__inner {
+        @apply border-blue-50;
+        &:hover {
+          @apply border-purple-900;
+        }
+      }
+    }
+    &.is-checked {
+      .el-radio__input {
+        .el-radio__inner {
+          @apply border-purple-900 bg-purple-900;
+        }
+      }
+      .el-radio__label {
+        @apply text-blue-200;
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.via-link {
+  @apply text-purple-900 cursor-pointer;
+
+  &.is-disabled {
+    @apply text-blue-50 cursor-not-allowed;
+  }
+}

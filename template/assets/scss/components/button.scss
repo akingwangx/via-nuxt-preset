@@ -1,0 +1,75 @@
+.el-button {
+  height: 50px;
+  @apply p-0 rounded-4 border-0 outline-none;
+
+  &:hover,
+  &:focus {
+    @apply outline-none border-0;
+  }
+
+  &.el-button--default {
+    @apply border rounded-4 text-purple-900 text-14 font-w400 border-purple-900;
+    &:hover {
+      @apply text-white bg-purple-900;
+    }
+    &.is-disabled {
+      @apply border-blue-50 text-blue-50 bg-white;
+    }
+  }
+
+  &.el-button--text {
+    @apply text-purple-900 h-auto;
+    &:hover,
+    &:focus {
+      @apply text-purple-900;
+    }
+  }
+
+  &.el-button--primary {
+    @apply bg-purple-900 text-white rounded-4;
+
+    &.is-plain {
+      @apply border-purple-900 border bg-white text-purple-900 #{!important};
+    }
+
+    &:not(.is-plain) {
+      &:hover,
+      &:focus {
+        @apply bg-purple-900;
+        box-shadow: 0px 10px 30px 0px rgba(112, 44, 252, 0.3);
+      }
+      &.is-disabled {
+        @apply opacity-50;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &.el-button--danger {
+    @apply bg-red-500 border-red-500;
+  }
+
+  &.el-button--cancel {
+    @apply text-purple-900;
+    background: none;
+    border: none;
+    &:hover {
+      background: none;
+    }
+    &:focus {
+      background: none;
+    }
+  }
+  &.el-button--info {
+    @apply border-blue-200 bg-blue-200;
+    &.is-plain {
+      @apply border-blue-200 bg-white border text-blue-200;
+      &:hover {
+        @apply border-purple-900 text-purple-900;
+      }
+    }
+    &.is-disabled {
+      @apply opacity-50;
+    }
+  }
+}

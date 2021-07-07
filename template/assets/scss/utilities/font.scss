@@ -1,0 +1,20 @@
+.f-num {
+  font-family: 'DIN Alternate';
+  font-weight: bold;
+}
+
+.f-num-a {
+  font-family: 'Avenir Roman';
+}
+
+@font-face {
+  font-family: "DIN Alternate";
+  src: url('../fonts/subset-DINAlternate-Bold.woff') format('woff'),
+  url('../fonts/subset-DINAlternate-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Avenir Roman";
+  src: url('../fonts/subset-Avenir-Roman.woff') format('woff'),
+  url('../fonts/subset-Avenir-Roman.ttf') format('truetype');
+}

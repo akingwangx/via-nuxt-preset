@@ -1,0 +1,62 @@
+@import "./element.scss";
+
+/** 定义类 */
+.unicode-plain {
+  unicode-bidi: plaintext;
+}
+
+[dir="rtl"] {
+  .rtl\:unicode-plain {
+    unicode-bidi: plaintext;
+  }
+  .rtl\:mirror {
+    transform: scaleX(-1);
+  }
+  .rtl\:dir-ltr {
+    direction: ltr;
+  }
+  .rtl\:dir-rtl {
+    direction: rtl;
+  }
+  .rtl\:text-right {
+    text-align: right;
+  }
+  .rtl\:break-keep {
+    word-break: keep-all;
+  }
+  .rtl\:break-word {
+    word-break: break-word !important;
+  }
+  .rtl\:transform {
+    --transform-translate-x: 0 !important;
+    --transform-translate-y: 0 !important;
+    --transform-rotate: 0 !important;
+    --transform-skew-x: 0 !important;
+    --transform-skew-y: 0 !important;
+    --transform-scale-x: 1 !important;
+    --transform-scale-y: 1 !important;
+
+    transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y)) !important;
+  }
+  .rtl\:translate-x-full {
+    --transform-translate-x: 100% !important;
+  }
+}
+
+/** 定义变量 */
+:root {
+  --float-start: left;
+  --float-end: right;
+}
+
+[dir="rtl"] {
+  --float-start: right;
+  --float-end: left;
+}
+
+/** 特殊处理 */
+[dir="rtl"] {
+  .el-icon-question {
+    transform: scaleX(-1);
+  }
+}

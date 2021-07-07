@@ -1,0 +1,1 @@
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - && sudo apt-get install libpng16-dev && sudo apt install -y nodejs && sudo npm i -g pm2 && pm2 install pm2-intercom && pm2 install pm2-logrotate && pm2 set pm2-logrotate:max_size 100M && npm i

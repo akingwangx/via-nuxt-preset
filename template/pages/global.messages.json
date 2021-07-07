@@ -1,0 +1,30 @@
+{
+    "en_US": {
+        "error@@@404": "404，Oops, the page is missing.",
+        "error@@@500": "500，Sorry, the page has an error.",
+        "error@@@504": "Server connection timed out. Please check your network.",
+        "error@@@666": "ATTENTION! Please be careful, you're visiting a phishing page. You'll be directed to ViaBTC in 5 seconds.",
+        "title": "ViaBTC | "
+    },
+    "ru_RU": {
+        "error@@@404": "404，Извините, эта страница пропала",
+        "error@@@500": "500，Извините, эта страница не работает",
+        "error@@@504": "Тайм-аут, пожалуйста, проверьте сеть!",
+        "error@@@666": "Внимание! Пожалуйста, будьте осторожны, вы посещаете фишинговую страницу. Вы будете перенаправлены на ViaBTC через 5 секунд..",
+        "title": "ViaPool | "
+    },
+    "zh_Hans_CN": {
+        "error@@@404": "404，抱歉，这个页面不见了",
+        "error@@@500": "500，抱歉，这个页面出错了",
+        "error@@@504": "连接服务器超时，请检查网络！",
+        "error@@@666": "注意！您当前访问的网址为非ViaBTC域名，请谨慎操作以防被钓鱼。五秒后我们将会自动为您跳转至viabtc.com",
+        "title": "ViaBTC | "
+    },
+    "zh_Hant_HK": {
+        "error@@@404": "404，抱歉，這個頁面不見了",
+        "error@@@500": "500，抱歉，這個頁面出錯了",
+        "error@@@504": "連接服務器超時，請檢查網絡！",
+        "error@@@666": "註意！您當前訪問的網址為非ViaBTC域名，請謹慎操作以防被釣魚。五秒後我們將會自動為您跳轉至viabtc.com",
+        "title": "ViaBTC | "
+    }
+}

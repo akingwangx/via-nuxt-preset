@@ -1,0 +1,12 @@
+@responsive {
+  .flex-default {
+    @apply flex;
+    @apply justify-between;
+    @apply items-center;
+  }
+
+  .flex-center-default {
+    @apply justify-center;
+    @apply items-center;
+  }
+}
