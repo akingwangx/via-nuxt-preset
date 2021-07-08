@@ -13,6 +13,10 @@ module.exports = {
   /*
   ** Headers of the page
   */
+  server: {
+    port: 3055,
+    host: '0.0.0.0',
+  },
   head: {
     title: 'viabtc-preset',
     meta: [
@@ -157,7 +161,10 @@ module.exports = {
     middleware: ['i18n'],
   },
   render: {
-    csp: {
+    csp: 
+    /development/.test(process.env.MODE)
+    ? undefined
+    : {
       reportOnly: false,
       policies: {
         'default-src': [

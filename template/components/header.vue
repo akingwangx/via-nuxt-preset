@@ -4,7 +4,9 @@
       <nuxt-link
         to="/"
         class="flex">
-        <img class="logo" src="/images/logo.png">
+        <img
+          class="logo"
+          src="/images/logo.png">
       </nuxt-link>
 
       <div class="flex-1"></div>

@@ -3,7 +3,7 @@
     class="c-common-header-langselect">
     <span class="flex items-center outline-none">
       <span class="ml-5 text-14 dd-text font-w400">{{ currentLangText }}</span>
-      <i class="iconfont icon-arrow text-16"></i>
+      <i class="el-icon-arrow-down el-icon--right"></i>
     </span>
     <el-dropdown-menu slot="dropdown">
       <el-dropdown-item
@@ -28,9 +28,7 @@ export default {
       availableLocales: 'lang/availableLocales',
     }),
   },
-  created() {
-    console.log(this.$lang, this.currentLangText, this.availableLocales);
-  },
+  created() {},
   methods: {
     onSetLang(item) {
       this.$store.dispatch('lang/setLang', item.value);

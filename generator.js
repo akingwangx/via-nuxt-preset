@@ -2,7 +2,8 @@ module.exports = (api, options, rootOptions) => {
   // 项目依赖
   api.extendPackage({
     "scripts": {
-      "dev": "nodemon server/index.js --watch server",
+      "serve": "cross-env NODE_ENV=development MODE=development nuxt",
+      "dev": "cross-env NODE_ENV=development MODE=development nuxt",
       "build": "nuxt build",
       "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
       "analyze": "nuxt build --analyze",
@@ -28,9 +29,7 @@ module.exports = (api, options, rootOptions) => {
       "cross-env": "^5.2.1",
       "element-ui": "^2.12.0",
       "koa": "^2.8.2",
-      "node-sass": "^4.13.1",
       "nuxt": "^2.15.3",
-      "sass-loader": "^7.3.1",
       "viai18n-loader": "0.0.41",
       "vue": "^2.6.12",
       "vuex": "^3.4.0"
@@ -45,6 +44,8 @@ module.exports = (api, options, rootOptions) => {
       "eslint-plugin-vue": "^6.2.2",
       "nodemon": "^1.19.3",
       "postcss": "^8.2.8",
+      "node-sass": "^4.13.1",
+      "sass-loader": "^7.3.1",
       "pre-commit": "^1.2.2",
       "prettier": "1.14.3",
       "stylelint": "^13.6.1",
@@ -56,7 +57,10 @@ module.exports = (api, options, rootOptions) => {
     Object.keys(files)
       .filter(path => path.startsWith('src/') || path.startsWith('public/'))
       .forEach(path => delete files[path])
-  })
+  });
+  api.onCreateComplete(() => {
+    process.env.VUE_CLI_SKIP_WRITE = true
+  });
   // 生成项目文件
   api.render('./template', {
     projectName: rootOptions.projectName,
