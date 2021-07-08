@@ -1,41 +1,65 @@
 {
     "en_US": {
+        "test接口": "test接口",
         "test翻译": "test翻译",
         "全球数字货币交易_a76c": "The Global Digital Coin Exchange",
+        "币价": "Coin Price",
+        "币种": "Coin",
         "矿池@DEPRECATED@": "Pool",
+        "算力": "Hashrate ≥",
         "聚集创新数字资产": "Where Innovative Digital Assets Gather",
         "顶尖的技术团队，_23d9": "With top technical team, all-round security protection and our proprietary high-speed matching engine, we guarantee stability under concurrency of thousands of orders, each one of which will be in good hands."
     },
     "es_ES": {
+        "test接口": "test接口",
         "test翻译": "test翻译",
         "全球数字货币交易_a76c": "El Intercambio Digital de Divisas a Nivel Mundial",
+        "币价": "币价",
+        "币种": "Cripto",
         "矿池@DEPRECATED@": "Pool de minería",
+        "算力": "算力",
         "聚集创新数字资产": "Donde los Activos Digitales Innovadores Se Reúnen",
         "顶尖的技术团队，_23d9": "Con nuestro equipo técnico de élite, la protección de seguridad integral y nuestro motor patentado de emparejamiento (matching) de alta velocidad, garantizamos la estabilidad a lo largo de miles de operaciones, y cada una de ellas estará en buenas manos."
     },
     "fa_IR": {
+        "test接口": "test接口",
         "test翻译": "test翻译",
         "全球数字货币交易_a76c": "صرافی جهانی ارزهای دیجیتال",
+        "币价": "币价",
+        "币种": "کوین",
         "矿池@DEPRECATED@": "استخر استخراج",
+        "算力": "算力",
         "聚集创新数字资产": "جایی که دارایی‌های دیجیتالی نوآورانه جمع می شوند",
         "顶尖的技术团队，_23d9": "با داشتن تیم فنی برتر؛ حفظ امنیت همه جانبه و موتورهای پرسرعت اختصاصی، ثبات و همزمانی هزاران سفارش را تضمین میکنیم طوری که هرکدام از آنها در جای خوبی هستند."
     },
     "ru_RU": {
+        "test接口": "test接口",
         "test翻译": "test翻译",
         "全球数字货币交易_a76c": "Глобальная биржа цифровых монет",
+        "币价": "Цена койна",
+        "币种": "Монета",
         "矿池@DEPRECATED@": "Пул",
+        "算力": "Хэшрейт",
         "聚集创新数字资产": "Источник инновационных цифровых активов",
         "顶尖的技术团队，_23d9": "Благодаря нашей элитной технической команде, всесторонней защите и нашему запатентованному высокоскоростному движку поиска совпадений, мы гарантируем одновременную стабильность тысяч заказов, каждый из которых будет в надежных руках."
     },
     "zh_Hans_CN": {
+        "test接口": "test接口",
         "test翻译": "test翻译",
         "全球数字货币交易_a76c": "全球数字货币交易平台",
+        "币价": "币价",
+        "币种": "币种",
+        "算力": "算力",
         "聚集创新数字资产": "聚集创新数字资产",
         "顶尖的技术团队，_23d9": "顶尖的技术团队，全方位安全保护，自主研发高速交易撮合引擎，海量交易并发下仍可稳定可靠运行。"
     },
     "zh_Hant_HK": {
+        "test接口": "test接口",
         "test翻译": "test翻譯",
         "全球数字货币交易_a76c": "全球數字貨幣交易平台",
+        "币价": "幣價",
+        "币种": "幣種",
+        "算力": "算力",
         "聚集创新数字资产": "聚集創新數字資產",
         "顶尖的技术团队，_23d9": "頂尖的技術團隊，全方位安全保護，自主研發高速交易撮合引擎，海量交易並發下仍可穩定可靠運行。"
     }
