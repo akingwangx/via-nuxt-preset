@@ -8,8 +8,9 @@
           class="logo"
           src="/images/logo.png">
       </nuxt-link>
-
+      <ProductMenu class="ml-4" />
       <div class="flex-1"></div>
+
 
       <!-- <HeaderMenu></HeaderMenu> -->
 
@@ -23,10 +24,11 @@
 
 <script>
 import LangSelect from '~/components/LangSelect.vue';
-
+import ProductMenu from '~/components/productMenu.vue';
 export default {
   components: {
     LangSelect,
+    ProductMenu,
   },
   data() {
     return {};

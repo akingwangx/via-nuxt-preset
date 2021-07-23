@@ -30,6 +30,9 @@ module.exports = {
       },
       svg: 'always'
     }],
+    "vue/html-closing-bracket-newline": ["error", {
+      "multiline": "never"
+    }],
     'no-undef': 'error',
     'no-unused-vars': ['error', {
       vars: 'all', // 检测所有变量，包括全局环境中的变量

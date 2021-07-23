@@ -51,11 +51,7 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-    '@/plugins/element-ui',
-    '@/plugins/axios',
-    '@/plugins/i18n',
-  ],
+  plugins: ['@/plugins/element-ui', '@/plugins/axios', '@/plugins/i18n'],
 
   /*
   ** Nuxt.js modules
@@ -154,15 +150,12 @@ module.exports = {
       }),
     ],
   },
-  buildModules: [
-    '@nuxtjs/tailwindcss',
-  ],
+  buildModules: ['@nuxtjs/tailwindcss'],
   router: {
     middleware: ['i18n'],
   },
   render: {
-    csp: 
-    /development/.test(process.env.MODE)
+    csp: /development/.test(process.env.MODE)
     ? undefined
     : {
       reportOnly: false,

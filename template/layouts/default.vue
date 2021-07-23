@@ -3,19 +3,22 @@
     class="l-default"
     direction="vertical">
     <Header />
-    <main class="l-default-main">
+    <el-main class="l-default-main">
       <nuxt />
-    </main>
+    </el-main>
+    <Footer />
   </el-container>
 </template>
 
 <script>
 import Header from '~/components/header.vue';
+import Footer from '~/components/footer.vue';
 
 export default {
   name: 'LayoutsDefault',
   components: {
     Header,
+    Footer,
   },
   data() {
     return {};
