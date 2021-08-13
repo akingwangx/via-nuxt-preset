@@ -71,9 +71,9 @@ export default {
         },
         {
           logo: require('~/assets/images/header/chain-logo.png'),
-          title: 'CoinEx Chain',
+          title: 'CoinEx智能链',
           subtitle: '去中心化公链生态系统',
-          shortTitle: 'CoinEx公链',
+          shortTitle: 'CoinEx智能链',
           link: `https://www.coinex.org/${this.langSuffix}`,
         },
         {
@@ -82,6 +82,13 @@ export default {
           subtitle: '去中心化交易平台',
           shortTitle: '去中心化交易平台',
           link: `https://www.oneswap.net/${this.langSuffix}`,
+        },
+        {
+          logo: require('~/assets/images/header/capital-logo.png'),
+          title: 'ViaBTC Capital',
+          subtitle: '区块链投资资本',
+          shortTitle: '区块链投资资本',
+          link: `https://capital.viabtc.com/${this.langSuffix}`,
         },
       ];
     },
