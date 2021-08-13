@@ -144,6 +144,17 @@ module.exports = {
       };
       config.module.rules.splice(eslintPosition, 0, vi18nloader);
     },
+    babel: {
+      plugins: [
+        [
+          'component',
+          {
+            libraryName: 'element-ui',
+            styleLibraryName: 'theme-chalk',
+          },
+        ],
+      ],
+    },
     plugins: [
       new webpack.DefinePlugin({
         __VERSION__: JSON.stringify(gitLastCommitHash),

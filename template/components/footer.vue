@@ -2,14 +2,17 @@
   <el-footer
     v-if="!$device.isNative"
     id="c-footer">
-    <div>
+    <div class="flex justify-between items-center">
+      <Copyright />
     </div>
   </el-footer>
 </template>
 
 <script>
+import Copyright from '~/components/copyright';
+
 export default {
-  components: {},
+  components: { Copyright },
   data() {
     return {};
   },
