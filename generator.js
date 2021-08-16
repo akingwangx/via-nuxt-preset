@@ -32,7 +32,8 @@ module.exports = (api, options, rootOptions) => {
       "nuxt": "^2.15.3",
       "viai18n-loader": "0.0.41",
       "vue": "^2.6.12",
-      "vuex": "^3.4.0"
+      "vuex": "^3.4.0",
+      "babel-plugin-component": "^1.1.1"
     },
     "devDependencies": {
       "babel-eslint": "^10.1.0",
